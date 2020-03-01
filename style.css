@@ -1,0 +1,139 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*installs Montserrat font from google*/
+
+body {
+  color: #555;
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  /* installs Monsterrat as default, and sans-serif as back up */
+}
+/*MY NOTES: */
+
+#header {
+  background-color: #1abc9c;
+  height: 150px; /*NOTES: sets element height to 150px*/
+  line-height: 150px; /*NOTES: the px which one block line takes up,
+  by setting it to the same height, it centers it */
+  font-family: sans-serif;
+  letter-spacing: -1px;
+}
+
+#header a { /*NOTES: selects all a's in id=header */
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+#header a:hover { /*NOTES: when links are hovered */
+  color: #222;
+}
+#header-title {
+  display: block; /*NOTES: Takes up the whole width*/
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+#header-nav {
+  display: block;
+  float:right; /*NOTES: pushes to right*/
+  margin-top: 0; /*NOTES: eliminates the unnecessary white margin */
+}
+
+#header-nav li {
+  display: inline; /*NOTES:displays the list items with the minimum width it needs */
+  padding-left: 20px; /*NOTES: gives 20px space between list items*/
+}
+
+img {
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /*NOTES: sets T+B margins to /0/ then auto centers*/
+}
+
+.post, .about{
+  max-width: 800px;
+  margin: 0 auto; /*centers horizontally*/
+  padding: 60px 0; /*60px padding, vertical axis*/
+
+}
+
+.post-container:nth-child(even)
+{ /* Selects all even children of parent this class (.postcontainer)*/
+  background-color: #f2f2f2;
+}
+
+.post-author img {
+  vertical-align: middle;
+}
+
+.post-author span {
+  margin-left: 16px;
+}
+
+.post-date {
+  color: #d2d2d2;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1, h2, h3, h4 { /*commas mean multiple, instead of elements inside elements*/
+  color: #333;
+}
+
+p {
+  line-height: 1.5; /*lines in paragraph have 1.5x more space*/
+}
+#footer {
+  background-color: #2f2f2f;
+  padding: 50px 0; /*NOTES: padding = distance between content and border
+  50px = the top and bottom, 0px horizontal*/
+  display: block;
+}
+
+.column {
+  min-width: 300px;
+  max-width: 600px;
+  display: inline-block; /*NOTES: same as inline but allows height and width*/
+  vertical-align: top;
+}
+
+#footer h4 { /* Selects h4's in the footer class*/
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#footer p {
+  color: white;
+}
+
+#pic-about-me {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+a:hovered {
+  color: #f6a623;
+}
+
+#footer-id {
+  display: inline-block;
+  float: right;
+}
